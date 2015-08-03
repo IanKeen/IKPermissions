@@ -3,6 +3,7 @@
 
 target 'IKPermissions' do
 	pod 'IKResults', '~> 1.0'
+	pod 'IKCore', '~> 1.0'
 end
 
 target 'IKPermissionsTests' do

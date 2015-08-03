@@ -1,10 +1,13 @@
 PODS:
+  - IKCore (1.2)
   - IKResults (1.1)
 
 DEPENDENCIES:
+  - IKCore (~> 1.0)
   - IKResults (~> 1.0)
 
 SPEC CHECKSUMS:
+  IKCore: adac0c5630064e08d6ed9b12f5a3bd9fb9ab870f
   IKResults: 6aee22a99d79f01f42f00b28e89889deef80d18f
 
 COCOAPODS: 0.38.2

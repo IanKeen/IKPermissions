@@ -7,79 +7,246 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		018F14665EB986C7E207592BC8DC7095 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE8D17C8D3286B0B62989C3C3F2E9AE /* Foundation.framework */; };
-		4BA32A43CB627374034EEDCBA055B3DD /* IKResultsCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = E403DC8317CB7F9E32774A2899A8CF8B /* IKResultsCommon.h */; };
-		4D958E6FDBEFDC83F8153F4759A7F9A7 /* Result.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B8F9C2996A45B95927C8AE9C2B95764 /* Result.h */; };
-		511CD0C3A65C19F7F1693D72CFCBFC7A /* AsyncResultGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E9F978EFD8BE2C6CA80DD76D7FD2A6F /* AsyncResultGroup.m */; };
-		5D17FF35BE4EF2559109347738F86B96 /* Pods-IKPermissions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 58635F7D6C0EB5BD5D2EFBADBE44843A /* Pods-IKPermissions-dummy.m */; };
-		77C90BA88EE5203F2CC65FC6FA4498A0 /* Result.m in Sources */ = {isa = PBXBuildFile; fileRef = A146F35DB1EBD49B1FF8DBE333A8C477 /* Result.m */; };
-		9178AD32FD6DE9FB5CD40503B6B00F95 /* IKResults-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB8524087D33CB322D855113EE5EEA2 /* IKResults-dummy.m */; };
-		9C4E37A853D76423BE7EE148F44A0345 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE8D17C8D3286B0B62989C3C3F2E9AE /* Foundation.framework */; };
-		B58E80B009E5E8BCAA21B9552AA8D044 /* AsyncResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C16B9E790380DDFAC81AB989361528 /* AsyncResult.m */; };
-		BA3B9CBCE9DE65D1003B0067190C5F2E /* AsyncResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 01B7E6BD94D94F2680A7DA972501DB67 /* AsyncResult.h */; };
-		D9E2455E3626B74E89EFF0FBC556D1DB /* AsyncResultGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = B675DA9007BCE779720AE2C4929D2BC8 /* AsyncResultGroup.h */; };
+		02688DC23630CECC3D3F36262F078169 /* KCMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D703C8950595239F17C384323DDF4A9 /* KCMutableDictionary.m */; };
+		039E973E7EDB13C0C085F331B0A9B5E7 /* NSDate+StringFormatting.h in Headers */ = {isa = PBXBuildFile; fileRef = F983195F7A203A0E3FADA93C639E6229 /* NSDate+StringFormatting.h */; };
+		0877658424690464CF636E1D14A21964 /* NSNumber+Times.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD456AA459197C172BD4C9EF30F807A /* NSNumber+Times.m */; };
+		0BC6A98CC298449A03484DCA32ADD47B /* DataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8FDE80E924887CAB4E552B13EB3824 /* DataStore.m */; };
+		11ED141E96436E598CA3964ED2C73492 /* NSDate+Building.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C524198BAD3E9E146B1B7A5D1C65D9 /* NSDate+Building.m */; };
+		1C361B810DE6EE2A3C2A62F3926CB6CB /* NSDate+TimeBetween.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FCA3957942C1480C1E7FB2DAB33A21D /* NSDate+TimeBetween.h */; };
+		1EE604D2B2D11B3C8B0F724E5768B2E4 /* NSArray+First.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1148DAE9BA2E56412EE4456A5DA67A /* NSArray+First.m */; };
+		23241D88E596C0EF24457464CA593ACD /* NSArray+Variadic.m in Sources */ = {isa = PBXBuildFile; fileRef = FF46B2D0B4545E0BDF6C23AB9B8288EB /* NSArray+Variadic.m */; };
+		2BA53ED77C938B8B0DC7EFF5DB14233A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA0CF44E0CFD39AD71CABE80DBD1E83 /* Foundation.framework */; };
+		2C214DC9A9F9E838A848766086CF0349 /* NSNumber+Times.h in Headers */ = {isa = PBXBuildFile; fileRef = BB9617D01F8B80F835FA6C4B146EC5D3 /* NSNumber+Times.h */; };
+		2E9D1DB6438ED3E44C557635C8593120 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA0CF44E0CFD39AD71CABE80DBD1E83 /* Foundation.framework */; };
+		2F3D8E4875040D72D1612E271FA52D07 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA0CF44E0CFD39AD71CABE80DBD1E83 /* Foundation.framework */; };
+		34A87EA5DA0EB53D8B589E1F67FA0DB9 /* NSObject+Null.m in Sources */ = {isa = PBXBuildFile; fileRef = FA322DF1043E2F0700FD713A8E8A01D7 /* NSObject+Null.m */; };
+		3669D0524A03C1499FAA5F1A640959A5 /* NSDate+Building.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BE56B33F0213B6C16AEE1CA0DE23C84 /* NSDate+Building.h */; };
+		390868443749FE2E3C7ADB3D504C5DD9 /* NSArray+Take.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BEFBB8D8E5DA3C0457E2264BCE3EFA /* NSArray+Take.m */; };
+		39710DDE7BFC01EF64455C6EA20651E5 /* NSDictionary+Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F018172855DC6F7A67CB0515722C4C /* NSDictionary+Filter.m */; };
+		3C9DF308B00B8F30FCC8DCF931B0D925 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC776673095B555F8E0A9C6C98CC9E7 /* Reachability.m */; };
+		3FF44BC3D951C28E6BEFF840176B5C09 /* NSNumber+Padding.m in Sources */ = {isa = PBXBuildFile; fileRef = 897E91AE3878581EB2BEFA843CBA6E1D /* NSNumber+Padding.m */; };
+		4021624BC7FA3803E0358BE72C6C42FB /* AsyncResultGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B6ABA5A6C6FC50E959C389A790A070F /* AsyncResultGroup.m */; };
+		416C7C5ACCD1A5F4E78F5CC2483144F8 /* NSArray+Map.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DF3DE90D93F690C5F29D1C61BF3CB61 /* NSArray+Map.h */; };
+		475CD726D90FAE0AFBE666368B4DAE44 /* Pods-IKPermissions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF43B0CAA51274D941D39FF774179EB /* Pods-IKPermissions-dummy.m */; };
+		4975AF8573D68EC495D22CFFC2EF2E19 /* NSObject+Map.h in Headers */ = {isa = PBXBuildFile; fileRef = BADA57E1D1F129ED14F38AD519F0651F /* NSObject+Map.h */; };
+		4B938272CDF47CFD3E2462342372D744 /* NSError+Init.h in Headers */ = {isa = PBXBuildFile; fileRef = F76FCAE6FA8747C14BE8A601801D03DB /* NSError+Init.h */; };
+		4D3044FB50C3002D339CA5E7BF29D8A4 /* NSArray+HeadTail.h in Headers */ = {isa = PBXBuildFile; fileRef = CA81D4B1ADB47922D69E407DD5D20C3B /* NSArray+HeadTail.h */; };
+		4F06D15F7684F76B031DB1203DB05E8B /* NSArray+Group.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D2B93E0C2E2611BFDB92C9925D78AD8 /* NSArray+Group.h */; };
+		50AD7ED7BAF0C6479625ABC742B4968D /* NSJSONSerialization+String.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F29242BDB56CB17BA8B75B4B8EE748 /* NSJSONSerialization+String.h */; };
+		50BD183A44F8D77891412C23972F9E33 /* NSArray+All.h in Headers */ = {isa = PBXBuildFile; fileRef = B00511C87C41ECD4A0A2F663CEBC6647 /* NSArray+All.h */; };
+		50EF34F5450E0DFF539E0A860623FD43 /* NSArray+Reduce.h in Headers */ = {isa = PBXBuildFile; fileRef = B3D7B55AA614688489CFB166C23FB447 /* NSArray+Reduce.h */; };
+		51BEC84D28E323EF45067C8495A212E2 /* MultiSort.h in Headers */ = {isa = PBXBuildFile; fileRef = E15D58C77A7A96D883C3FFCCF1B87A2C /* MultiSort.h */; };
+		59DD1D5A63D8C26546BFC7075D871540 /* NSDictionary+Filter.h in Headers */ = {isa = PBXBuildFile; fileRef = 41FF9C4529F00DD92BD00294D7214AE2 /* NSDictionary+Filter.h */; };
+		619D6CDD84456A6395B2326A7C8BFA75 /* NSArray+HeadTail.m in Sources */ = {isa = PBXBuildFile; fileRef = DECF258B4395EBCCFA56E637A864B30F /* NSArray+HeadTail.m */; };
+		63E258BEF51DDE8466387F758B35AE8F /* NSDate+StringFormatting.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4FB9DD0630085680FC8E3E362193C /* NSDate+StringFormatting.m */; };
+		709A17D1FE9630E77B071E51988297D0 /* NSNumber+DurationString.h in Headers */ = {isa = PBXBuildFile; fileRef = A796EB80B860F52DC2E01BD788C641EE /* NSNumber+DurationString.h */; };
+		72C8D3F66BD93A76895555D704FC13C0 /* NSArray+Unique.h in Headers */ = {isa = PBXBuildFile; fileRef = 88515BEE8697320398CFCB3608F196E8 /* NSArray+Unique.h */; };
+		72D8C77DCEDA7C2448244D41D44A23E0 /* Result.h in Headers */ = {isa = PBXBuildFile; fileRef = 88DA364D71DCFB2C0708B0BCFCAF6921 /* Result.h */; };
+		7840672746F0C432C7B43A6A1CE355BA /* AsyncResult.h in Headers */ = {isa = PBXBuildFile; fileRef = EB07A35571AE124B5C5660A5C131DEF0 /* AsyncResult.h */; };
+		7C0DBF32357889C17E71B8904183B8CB /* NSNumber+Logic.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A11A0DCF1F3BF02E4C549CAD3DE033A /* NSNumber+Logic.m */; };
+		7DAF017CF7C8CDBAFA6764CD65B0CD79 /* NSArray+All.m in Sources */ = {isa = PBXBuildFile; fileRef = 54827E5BBD01E4A89D0C1AE27703A37D /* NSArray+All.m */; };
+		7FA55516E33ED3F7E7BE61B64E100B20 /* NSArray+Unique.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3D8DA14D20C906C5B4D33D1BDCCDA5 /* NSArray+Unique.m */; };
+		82FD5D6FF9098795FBFCB3C89ED64687 /* NSNumber+DurationString.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A7F52EA2EA2E733C95FAA0B988AC24 /* NSNumber+DurationString.m */; };
+		846B0EE8A7FFCE634EF4E84829CF0259 /* IKResultsCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 71FCD88F9CBB5B1644C6CF7C2CBDD5FA /* IKResultsCommon.h */; };
+		87CBD35BC4C0F7C0FBB8344D2B0893DB /* NSObject+Introspection.m in Sources */ = {isa = PBXBuildFile; fileRef = F66146AE538940B20981BBE9DF4A7E2B /* NSObject+Introspection.m */; };
+		8E79EC58F72A32783F42CDCB552D22A8 /* Device.h in Headers */ = {isa = PBXBuildFile; fileRef = 731209BC9E2EC01A80D753D25066ABE0 /* Device.h */; };
+		903F4410614C1F1CB33870CA19A6F88E /* IKResults-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5464C4E5691932ED4378788DA65E18A1 /* IKResults-dummy.m */; };
+		919736840DCC397D2410C636379DC7EE /* NSNumber+ReadableDurations.h in Headers */ = {isa = PBXBuildFile; fileRef = BF417FA2C149BC249BFE705AE3661B28 /* NSNumber+ReadableDurations.h */; };
+		96B5369732B7BCB26E60C5FEBC64EAA0 /* Result.m in Sources */ = {isa = PBXBuildFile; fileRef = 51B1AF11B3CE11A78274A6F61BB04DD3 /* Result.m */; };
+		974AB6BA4CC67E7011DA554EFB2B3EB0 /* Decorators.h in Headers */ = {isa = PBXBuildFile; fileRef = CEACF0214CFB23EE0566A3D55D8F65E8 /* Decorators.h */; };
+		9C9695C8E9CEA81787207F6873E2B39C /* NSArray+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = 76ECB99DEE79A4B35D1D619DB68B3DF5 /* NSArray+Map.m */; };
+		A296F32666EA9DE7042B717D584B6D4D /* NSNumber+Padding.h in Headers */ = {isa = PBXBuildFile; fileRef = 7ABF8B13F59E7E2981863AB3DEBD15E7 /* NSNumber+Padding.h */; };
+		A468327E137535B9D6C55F4552F7C386 /* NSArray+Variadic.h in Headers */ = {isa = PBXBuildFile; fileRef = 94DB919296126416A859308A03F24AF3 /* NSArray+Variadic.h */; };
+		A5818F961AD5F51BB8E75C22C109E02F /* AsyncResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 782CA40B3E3225063055DA732D2B3C7A /* AsyncResult.m */; };
+		B652294DD9AF357DAE0303E2504D92D0 /* NSNumber+Logic.h in Headers */ = {isa = PBXBuildFile; fileRef = 79CD39429DB023D234AEDD7B96CBCFFE /* NSNumber+Logic.h */; };
+		BA6C1966AD433F8224591B748EFEB65B /* Defines.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F6C17FA9AE68C5FD6CA07668ACBB24F /* Defines.h */; };
+		BB5F2FCF09AEF49FA1CF4C22C5CA7550 /* NSDate+Shortcuts.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CBD813B4616B02C42FE954E32FA3951 /* NSDate+Shortcuts.h */; };
+		BCA2E6319514A8B94C719B344F055097 /* KCMutableDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 15CBB062220CE65B2BB13E1BD57D4B97 /* KCMutableDictionary.h */; };
+		BCF05C9E45973648E73E9686932F6AAF /* NSJSONSerialization+String.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6B6D0EC17E32CDFB5BD842F7910CFA /* NSJSONSerialization+String.m */; };
+		BEB08BE40887D020547EDFE546A2D9E5 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 015D81BC27F2BBF6D4055277F02A4EDB /* Reachability.h */; };
+		BECA9523BC181AF8BEF8ADC1E50FAA77 /* NSArray+Group.m in Sources */ = {isa = PBXBuildFile; fileRef = C48B1156CEEC6F344B225B1ACA58B048 /* NSArray+Group.m */; };
+		C12A7379BC2209E1556BF1F33F0E5553 /* NSMutableSet+ThreadSafe.h in Headers */ = {isa = PBXBuildFile; fileRef = 91360D6FAE38AEF8478A1A2E05009682 /* NSMutableSet+ThreadSafe.h */; };
+		C255B5963E2505167B78E11979FE3DB4 /* NSMutableSet+ThreadSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A2CBBCC934390A0A6D9CAF500249915 /* NSMutableSet+ThreadSafe.m */; };
+		C5997747B45300191AE5787797DE1E7B /* NSNumber+ReadableDurations.m in Sources */ = {isa = PBXBuildFile; fileRef = BE37781F9266C03BAB095485D67E6980 /* NSNumber+ReadableDurations.m */; };
+		CF4BEE3D6AE8B1777B77AAFDD128F958 /* NSObject+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC884B279B867081F96634B7EABEDF2 /* NSObject+Map.m */; };
+		CF5E7B604B8C518DEBA5A86B3A08CD73 /* Device.m in Sources */ = {isa = PBXBuildFile; fileRef = 44DEE36CC0DB8A593155DD8F58AC0383 /* Device.m */; };
+		CFA6672387895C95E81284BBD937073F /* MultiSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F534B9B3954D5C1760A442FA9E0D23A /* MultiSort.m */; };
+		D18B6102D87133DEFA43D9836882CD90 /* NSDate+Shortcuts.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D60A7CDA79223B39165C8B98A6A7A8 /* NSDate+Shortcuts.m */; };
+		D2E3A845CF89BD560B9D712C865B6B26 /* NSArray+First.h in Headers */ = {isa = PBXBuildFile; fileRef = D7BEB86D632363E1AE856465BE1D278E /* NSArray+First.h */; };
+		D33084391839687E0C481E5FF7C5750C /* IKCore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE259A331EE215AD0621DCE99E5355F /* IKCore-dummy.m */; };
+		D60F86F3EB5AE83F318A3557EA4E6EE7 /* NSDate+TimeBetween.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD54F5C439EFE5F37DC7C97ACAAC0B5 /* NSDate+TimeBetween.m */; };
+		D7AE0F6F3DA86DB8057AD8D381F61280 /* AsyncResultGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 1629BDBB5B4F65A6E660035A1A0BD425 /* AsyncResultGroup.h */; };
+		DA1A1D1F2FD67648C95C21C48EC50C60 /* NSSet+Map.h in Headers */ = {isa = PBXBuildFile; fileRef = F065FB90D43EF4D30EC55C7C24F2CEC8 /* NSSet+Map.h */; };
+		DA5D6EA98D0EF2DFB96D6429274B5FDB /* NSArray+Reduce.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4B6F541306E68F8FF8B8403E508125 /* NSArray+Reduce.m */; };
+		DD2A215F6649B347C9F3A67FCA4AEE13 /* NSObject+Introspection.h in Headers */ = {isa = PBXBuildFile; fileRef = D202979FDB372791E599EDA0A9B21BFF /* NSObject+Introspection.h */; };
+		E459A0EA917E946B95350CCA50757F99 /* NSArray+Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A265087A95E3BB797203042701F7A60 /* NSArray+Filter.m */; };
+		E4672E355954D0930A6C73CAE794BF91 /* NSObject+Null.h in Headers */ = {isa = PBXBuildFile; fileRef = 6175D6CF919B6F6FAF5926441B8E4209 /* NSObject+Null.h */; };
+		E52B84904F2668872E60B3C3DEBCEFAC /* NSSet+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D121FBDE9F5852B22DF7099E6F88D2D /* NSSet+Map.m */; };
+		EFCBA2B075883CA0BC6A8933B48F081C /* DataStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 003257857BF524802E26709F0584461D /* DataStore.h */; };
+		F2F53E4ACD7564B1A61EF6DA34E68326 /* NSError+Init.m in Sources */ = {isa = PBXBuildFile; fileRef = E89DBC825C9405F07F47903FDC0C4F6A /* NSError+Init.m */; };
+		F91FF27DC456A7AAD773ED290F636DBA /* NSArray+Filter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F53365487BDCDC7200483A6772A290E /* NSArray+Filter.h */; };
+		FAD67CBFA948BAC0519FE6CB7636E91A /* NSArray+Take.h in Headers */ = {isa = PBXBuildFile; fileRef = DB2A3DE172EF42541289EEBE26EF921E /* NSArray+Take.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A6E701EAB952B7ED64095DC6FE97C26F /* PBXContainerItemProxy */ = {
+		8B270F464F75284BF2B86680AAB2774B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 61E74D48B24AED043959DD79853DE16C;
+			remoteGlobalIDString = 5F6FAB687F6FC2AF82A0FAF3CA3C08C3;
+			remoteInfo = IKCore;
+		};
+		A761AB15BE7F2EB0BE6CAC6C6FE0F356 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B34115B7FD0311114FBF55D439F6C97C;
 			remoteInfo = IKResults;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01B7E6BD94D94F2680A7DA972501DB67 /* AsyncResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AsyncResult.h; path = IKResults/AsyncResult/AsyncResult.h; sourceTree = "<group>"; };
-		11C16B9E790380DDFAC81AB989361528 /* AsyncResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AsyncResult.m; path = IKResults/AsyncResult/AsyncResult.m; sourceTree = "<group>"; };
+		003257857BF524802E26709F0584461D /* DataStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DataStore.h; path = IKCore/DataStore/DataStore.h; sourceTree = "<group>"; };
+		015D81BC27F2BBF6D4055277F02A4EDB /* Reachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = IKCore/Vendor/Reachability/Reachability.h; sourceTree = "<group>"; };
+		0AA4FB9DD0630085680FC8E3E362193C /* NSDate+StringFormatting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+StringFormatting.m"; path = "IKCore/NSDate/NSDate+StringFormatting.m"; sourceTree = "<group>"; };
+		0BE56B33F0213B6C16AEE1CA0DE23C84 /* NSDate+Building.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+Building.h"; path = "IKCore/NSDate/NSDate+Building.h"; sourceTree = "<group>"; };
+		0D121FBDE9F5852B22DF7099E6F88D2D /* NSSet+Map.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSSet+Map.m"; path = "IKCore/NSSet/NSSet+Map.m"; sourceTree = "<group>"; };
+		15CBB062220CE65B2BB13E1BD57D4B97 /* KCMutableDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KCMutableDictionary.h; path = IKCore/Vendor/KeyChain/KCMutableDictionary.h; sourceTree = "<group>"; };
+		1629BDBB5B4F65A6E660035A1A0BD425 /* AsyncResultGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AsyncResultGroup.h; path = IKResults/AsyncResult/AsyncResultGroup.h; sourceTree = "<group>"; };
 		1C308683409AF3A47F252BF5C373BA68 /* Pods-IKPermissions-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IKPermissions-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1D57BF70955A5523ECD19E89AD4BF540 /* Pods-IKPermissions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IKPermissions.release.xcconfig"; sourceTree = "<group>"; };
-		1E9F978EFD8BE2C6CA80DD76D7FD2A6F /* AsyncResultGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AsyncResultGroup.m; path = IKResults/AsyncResult/AsyncResultGroup.m; sourceTree = "<group>"; };
-		58635F7D6C0EB5BD5D2EFBADBE44843A /* Pods-IKPermissions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IKPermissions-dummy.m"; sourceTree = "<group>"; };
-		6AE8D17C8D3286B0B62989C3C3F2E9AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		1CD54F5C439EFE5F37DC7C97ACAAC0B5 /* NSDate+TimeBetween.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+TimeBetween.m"; path = "IKCore/NSDate/NSDate+TimeBetween.m"; sourceTree = "<group>"; };
+		1D703C8950595239F17C384323DDF4A9 /* KCMutableDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KCMutableDictionary.m; path = IKCore/Vendor/KeyChain/KCMutableDictionary.m; sourceTree = "<group>"; };
+		21A7F52EA2EA2E733C95FAA0B988AC24 /* NSNumber+DurationString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+DurationString.m"; path = "IKCore/NSNumber/NSNumber+DurationString.m"; sourceTree = "<group>"; };
+		23D60A7CDA79223B39165C8B98A6A7A8 /* NSDate+Shortcuts.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Shortcuts.m"; path = "IKCore/NSDate/NSDate+Shortcuts.m"; sourceTree = "<group>"; };
+		2D545898BF8F056DDAADBD6CE2744608 /* Pods-IKPermissions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IKPermissions.debug.xcconfig"; sourceTree = "<group>"; };
+		3A11A0DCF1F3BF02E4C549CAD3DE033A /* NSNumber+Logic.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+Logic.m"; path = "IKCore/NSNumber/NSNumber+Logic.m"; sourceTree = "<group>"; };
+		3B02E9C5A2791306731C1B75D1E63E0C /* IKResults-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IKResults-prefix.pch"; sourceTree = "<group>"; };
+		3B6B6D0EC17E32CDFB5BD842F7910CFA /* NSJSONSerialization+String.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSJSONSerialization+String.m"; path = "IKCore/NSJSONSerialization/NSJSONSerialization+String.m"; sourceTree = "<group>"; };
+		3EF7F68530F4122686517436A6F414BF /* libPods-IKPermissions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IKPermissions.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F53365487BDCDC7200483A6772A290E /* NSArray+Filter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Filter.h"; path = "IKCore/NSArray/NSArray+Filter.h"; sourceTree = "<group>"; };
+		41FF9C4529F00DD92BD00294D7214AE2 /* NSDictionary+Filter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Filter.h"; path = "IKCore/NSDictionary/NSDictionary+Filter.h"; sourceTree = "<group>"; };
+		44DEE36CC0DB8A593155DD8F58AC0383 /* Device.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Device.m; path = IKCore/Device/Device.m; sourceTree = "<group>"; };
+		4A9592259BBE6AB3BB00291E41A2DC62 /* IKCore-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "IKCore-Private.xcconfig"; sourceTree = "<group>"; };
+		4DF43B0CAA51274D941D39FF774179EB /* Pods-IKPermissions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IKPermissions-dummy.m"; sourceTree = "<group>"; };
+		51B1AF11B3CE11A78274A6F61BB04DD3 /* Result.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Result.m; path = IKResults/Result/Result.m; sourceTree = "<group>"; };
+		5439999D004438AC208A9B8B00968E9A /* Pods-IKPermissions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IKPermissions.release.xcconfig"; sourceTree = "<group>"; };
+		5464C4E5691932ED4378788DA65E18A1 /* IKResults-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IKResults-dummy.m"; sourceTree = "<group>"; };
+		54827E5BBD01E4A89D0C1AE27703A37D /* NSArray+All.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+All.m"; path = "IKCore/NSArray/NSArray+All.m"; sourceTree = "<group>"; };
+		5DF3DE90D93F690C5F29D1C61BF3CB61 /* NSArray+Map.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Map.h"; path = "IKCore/NSArray/NSArray+Map.h"; sourceTree = "<group>"; };
+		5EA0CF44E0CFD39AD71CABE80DBD1E83 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5EE259A331EE215AD0621DCE99E5355F /* IKCore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IKCore-dummy.m"; sourceTree = "<group>"; };
+		6175D6CF919B6F6FAF5926441B8E4209 /* NSObject+Null.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+Null.h"; path = "IKCore/NSObject/NSObject+Null.h"; sourceTree = "<group>"; };
+		6B48F2FDECDCA50D47B3E67745838D01 /* IKResults-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "IKResults-Private.xcconfig"; sourceTree = "<group>"; };
+		6B6ABA5A6C6FC50E959C389A790A070F /* AsyncResultGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AsyncResultGroup.m; path = IKResults/AsyncResult/AsyncResultGroup.m; sourceTree = "<group>"; };
+		6F534B9B3954D5C1760A442FA9E0D23A /* MultiSort.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MultiSort.m; path = IKCore/MultiSort.m; sourceTree = "<group>"; };
+		71FCD88F9CBB5B1644C6CF7C2CBDD5FA /* IKResultsCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IKResultsCommon.h; path = IKResults/IKResultsCommon.h; sourceTree = "<group>"; };
+		731209BC9E2EC01A80D753D25066ABE0 /* Device.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Device.h; path = IKCore/Device/Device.h; sourceTree = "<group>"; };
+		76ECB99DEE79A4B35D1D619DB68B3DF5 /* NSArray+Map.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Map.m"; path = "IKCore/NSArray/NSArray+Map.m"; sourceTree = "<group>"; };
+		782CA40B3E3225063055DA732D2B3C7A /* AsyncResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AsyncResult.m; path = IKResults/AsyncResult/AsyncResult.m; sourceTree = "<group>"; };
 		784330FA26B88FCA8ACB7A806CEBCCA1 /* Pods-IKPermissions-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IKPermissions-acknowledgements.plist"; sourceTree = "<group>"; };
-		7C5A80C30085667BF68ED39082EEBF03 /* IKResults-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "IKResults-Private.xcconfig"; sourceTree = "<group>"; };
-		7CB8524087D33CB322D855113EE5EEA2 /* IKResults-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IKResults-dummy.m"; sourceTree = "<group>"; };
-		9B8F9C2996A45B95927C8AE9C2B95764 /* Result.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Result.h; path = IKResults/Result/Result.h; sourceTree = "<group>"; };
-		A146F35DB1EBD49B1FF8DBE333A8C477 /* Result.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Result.m; path = IKResults/Result/Result.m; sourceTree = "<group>"; };
-		B1176740E0214FDB2556B16DE1074175 /* libIKResults.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIKResults.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B505107A73C39E7878230DA0DBCF338A /* libPods-IKPermissions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IKPermissions.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B675DA9007BCE779720AE2C4929D2BC8 /* AsyncResultGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AsyncResultGroup.h; path = IKResults/AsyncResult/AsyncResultGroup.h; sourceTree = "<group>"; };
+		79CD39429DB023D234AEDD7B96CBCFFE /* NSNumber+Logic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNumber+Logic.h"; path = "IKCore/NSNumber/NSNumber+Logic.h"; sourceTree = "<group>"; };
+		7A265087A95E3BB797203042701F7A60 /* NSArray+Filter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Filter.m"; path = "IKCore/NSArray/NSArray+Filter.m"; sourceTree = "<group>"; };
+		7ABF8B13F59E7E2981863AB3DEBD15E7 /* NSNumber+Padding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNumber+Padding.h"; path = "IKCore/NSNumber/NSNumber+Padding.h"; sourceTree = "<group>"; };
+		7AC884B279B867081F96634B7EABEDF2 /* NSObject+Map.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Map.m"; path = "IKCore/NSObject/NSObject+Map.m"; sourceTree = "<group>"; };
+		7C02C2A8E8EEA53570E70D4726E047F9 /* libIKResults.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIKResults.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D2B93E0C2E2611BFDB92C9925D78AD8 /* NSArray+Group.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Group.h"; path = "IKCore/NSArray/NSArray+Group.h"; sourceTree = "<group>"; };
+		7E729E60CD1AA0AC116469FF07011A3D /* IKResults.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IKResults.xcconfig; sourceTree = "<group>"; };
+		7FCA3957942C1480C1E7FB2DAB33A21D /* NSDate+TimeBetween.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+TimeBetween.h"; path = "IKCore/NSDate/NSDate+TimeBetween.h"; sourceTree = "<group>"; };
+		80C524198BAD3E9E146B1B7A5D1C65D9 /* NSDate+Building.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Building.m"; path = "IKCore/NSDate/NSDate+Building.m"; sourceTree = "<group>"; };
+		88515BEE8697320398CFCB3608F196E8 /* NSArray+Unique.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Unique.h"; path = "IKCore/NSArray/NSArray+Unique.h"; sourceTree = "<group>"; };
+		88DA364D71DCFB2C0708B0BCFCAF6921 /* Result.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Result.h; path = IKResults/Result/Result.h; sourceTree = "<group>"; };
+		897E91AE3878581EB2BEFA843CBA6E1D /* NSNumber+Padding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+Padding.m"; path = "IKCore/NSNumber/NSNumber+Padding.m"; sourceTree = "<group>"; };
+		8A2CBBCC934390A0A6D9CAF500249915 /* NSMutableSet+ThreadSafe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableSet+ThreadSafe.m"; path = "IKCore/NSMutableSet/NSMutableSet+ThreadSafe.m"; sourceTree = "<group>"; };
+		8B1148DAE9BA2E56412EE4456A5DA67A /* NSArray+First.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+First.m"; path = "IKCore/NSArray/NSArray+First.m"; sourceTree = "<group>"; };
+		8CC776673095B555F8E0A9C6C98CC9E7 /* Reachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = IKCore/Vendor/Reachability/Reachability.m; sourceTree = "<group>"; };
+		91360D6FAE38AEF8478A1A2E05009682 /* NSMutableSet+ThreadSafe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableSet+ThreadSafe.h"; path = "IKCore/NSMutableSet/NSMutableSet+ThreadSafe.h"; sourceTree = "<group>"; };
+		94DB919296126416A859308A03F24AF3 /* NSArray+Variadic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Variadic.h"; path = "IKCore/NSArray/NSArray+Variadic.h"; sourceTree = "<group>"; };
+		9CBD813B4616B02C42FE954E32FA3951 /* NSDate+Shortcuts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+Shortcuts.h"; path = "IKCore/NSDate/NSDate+Shortcuts.h"; sourceTree = "<group>"; };
+		9F6C17FA9AE68C5FD6CA07668ACBB24F /* Defines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Defines.h; path = IKCore/Defines.h; sourceTree = "<group>"; };
+		A796EB80B860F52DC2E01BD788C641EE /* NSNumber+DurationString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNumber+DurationString.h"; path = "IKCore/NSNumber/NSNumber+DurationString.h"; sourceTree = "<group>"; };
+		A8BD66B3B1061031AA4450A493ED6504 /* libIKCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIKCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABDD459565C51CAA4AB79EFC5CAC3EDC /* IKCore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IKCore-prefix.pch"; sourceTree = "<group>"; };
+		B00511C87C41ECD4A0A2F663CEBC6647 /* NSArray+All.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+All.h"; path = "IKCore/NSArray/NSArray+All.h"; sourceTree = "<group>"; };
+		B3D7B55AA614688489CFB166C23FB447 /* NSArray+Reduce.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Reduce.h"; path = "IKCore/NSArray/NSArray+Reduce.h"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BADA57E1D1F129ED14F38AD519F0651F /* NSObject+Map.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+Map.h"; path = "IKCore/NSObject/NSObject+Map.h"; sourceTree = "<group>"; };
+		BB9617D01F8B80F835FA6C4B146EC5D3 /* NSNumber+Times.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNumber+Times.h"; path = "IKCore/NSNumber/NSNumber+Times.h"; sourceTree = "<group>"; };
+		BCD456AA459197C172BD4C9EF30F807A /* NSNumber+Times.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+Times.m"; path = "IKCore/NSNumber/NSNumber+Times.m"; sourceTree = "<group>"; };
+		BD4B6F541306E68F8FF8B8403E508125 /* NSArray+Reduce.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Reduce.m"; path = "IKCore/NSArray/NSArray+Reduce.m"; sourceTree = "<group>"; };
+		BE37781F9266C03BAB095485D67E6980 /* NSNumber+ReadableDurations.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+ReadableDurations.m"; path = "IKCore/NSNumber/NSNumber+ReadableDurations.m"; sourceTree = "<group>"; };
+		BF417FA2C149BC249BFE705AE3661B28 /* NSNumber+ReadableDurations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNumber+ReadableDurations.h"; path = "IKCore/NSNumber/NSNumber+ReadableDurations.h"; sourceTree = "<group>"; };
 		C230FE2083AB69E0A10CF763913186B0 /* Pods-IKPermissions-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IKPermissions-resources.sh"; sourceTree = "<group>"; };
-		C667B3D0784CECDC446D4C4F1777B9FC /* IKResults-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IKResults-prefix.pch"; sourceTree = "<group>"; };
-		DF39BD7020BD41AC83A3E1B63A5F477D /* IKResults.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IKResults.xcconfig; sourceTree = "<group>"; };
-		E403DC8317CB7F9E32774A2899A8CF8B /* IKResultsCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IKResultsCommon.h; path = IKResults/IKResultsCommon.h; sourceTree = "<group>"; };
-		F057A3C508F56E2B791912E9D039EBC3 /* Pods-IKPermissions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IKPermissions.debug.xcconfig"; sourceTree = "<group>"; };
+		C48B1156CEEC6F344B225B1ACA58B048 /* NSArray+Group.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Group.m"; path = "IKCore/NSArray/NSArray+Group.m"; sourceTree = "<group>"; };
+		CA81D4B1ADB47922D69E407DD5D20C3B /* NSArray+HeadTail.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+HeadTail.h"; path = "IKCore/NSArray/NSArray+HeadTail.h"; sourceTree = "<group>"; };
+		CC3D8DA14D20C906C5B4D33D1BDCCDA5 /* NSArray+Unique.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Unique.m"; path = "IKCore/NSArray/NSArray+Unique.m"; sourceTree = "<group>"; };
+		CE8FDE80E924887CAB4E552B13EB3824 /* DataStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DataStore.m; path = IKCore/DataStore/DataStore.m; sourceTree = "<group>"; };
+		CEACF0214CFB23EE0566A3D55D8F65E8 /* Decorators.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Decorators.h; path = IKCore/Decorators.h; sourceTree = "<group>"; };
+		D202979FDB372791E599EDA0A9B21BFF /* NSObject+Introspection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+Introspection.h"; path = "IKCore/NSObject/NSObject+Introspection.h"; sourceTree = "<group>"; };
+		D2BEFBB8D8E5DA3C0457E2264BCE3EFA /* NSArray+Take.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Take.m"; path = "IKCore/NSArray/NSArray+Take.m"; sourceTree = "<group>"; };
+		D7BEB86D632363E1AE856465BE1D278E /* NSArray+First.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+First.h"; path = "IKCore/NSArray/NSArray+First.h"; sourceTree = "<group>"; };
+		D9F29242BDB56CB17BA8B75B4B8EE748 /* NSJSONSerialization+String.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSJSONSerialization+String.h"; path = "IKCore/NSJSONSerialization/NSJSONSerialization+String.h"; sourceTree = "<group>"; };
+		DB2A3DE172EF42541289EEBE26EF921E /* NSArray+Take.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Take.h"; path = "IKCore/NSArray/NSArray+Take.h"; sourceTree = "<group>"; };
+		DECF258B4395EBCCFA56E637A864B30F /* NSArray+HeadTail.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+HeadTail.m"; path = "IKCore/NSArray/NSArray+HeadTail.m"; sourceTree = "<group>"; };
+		E15D58C77A7A96D883C3FFCCF1B87A2C /* MultiSort.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MultiSort.h; path = IKCore/MultiSort.h; sourceTree = "<group>"; };
+		E555E4C0558D4E2CCA5D1861A79AFA1D /* IKCore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IKCore.xcconfig; sourceTree = "<group>"; };
+		E89DBC825C9405F07F47903FDC0C4F6A /* NSError+Init.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSError+Init.m"; path = "IKCore/NSError/NSError+Init.m"; sourceTree = "<group>"; };
+		EB07A35571AE124B5C5660A5C131DEF0 /* AsyncResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AsyncResult.h; path = IKResults/AsyncResult/AsyncResult.h; sourceTree = "<group>"; };
+		F065FB90D43EF4D30EC55C7C24F2CEC8 /* NSSet+Map.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSSet+Map.h"; path = "IKCore/NSSet/NSSet+Map.h"; sourceTree = "<group>"; };
+		F3F018172855DC6F7A67CB0515722C4C /* NSDictionary+Filter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+Filter.m"; path = "IKCore/NSDictionary/NSDictionary+Filter.m"; sourceTree = "<group>"; };
+		F66146AE538940B20981BBE9DF4A7E2B /* NSObject+Introspection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Introspection.m"; path = "IKCore/NSObject/NSObject+Introspection.m"; sourceTree = "<group>"; };
+		F76FCAE6FA8747C14BE8A601801D03DB /* NSError+Init.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSError+Init.h"; path = "IKCore/NSError/NSError+Init.h"; sourceTree = "<group>"; };
+		F983195F7A203A0E3FADA93C639E6229 /* NSDate+StringFormatting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+StringFormatting.h"; path = "IKCore/NSDate/NSDate+StringFormatting.h"; sourceTree = "<group>"; };
+		FA322DF1043E2F0700FD713A8E8A01D7 /* NSObject+Null.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Null.m"; path = "IKCore/NSObject/NSObject+Null.m"; sourceTree = "<group>"; };
+		FF46B2D0B4545E0BDF6C23AB9B8288EB /* NSArray+Variadic.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Variadic.m"; path = "IKCore/NSArray/NSArray+Variadic.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1D00119F5D949021ECD26BC4DE6E04AA /* Frameworks */ = {
+		1E7F736E9944CE1C566AD799FA23370D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C4E37A853D76423BE7EE148F44A0345 /* Foundation.framework in Frameworks */,
+				2F3D8E4875040D72D1612E271FA52D07 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9815ADD7EAF65AB81EA5A1FFF2CE1D4D /* Frameworks */ = {
+		B24638EBB00638EF3C1419BEAB562AF3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				018F14665EB986C7E207592BC8DC7095 /* Foundation.framework in Frameworks */,
+				2BA53ED77C938B8B0DC7EFF5DB14233A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3D2E86EAB139A84F6EFC25412B43C7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E9D1DB6438ED3E44C557635C8593120 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3C90B7C70A88962264A314D07B263D91 /* Pods */ = {
+		01E74BDABC39D8A78A3114ABE3781601 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8BD8E15CA8F599C84D52C899E439ABA9 /* IKResults */,
+				AE59D2DCCA441752EDFDFBA49B0511AC /* IKCore */,
+				FC1CE99E30BF4830B244387A0F1EEE7D /* IKResults */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		20FA887A6E4EA4E8A30AC1D0D65C55EB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E729E60CD1AA0AC116469FF07011A3D /* IKResults.xcconfig */,
+				6B48F2FDECDCA50D47B3E67745838D01 /* IKResults-Private.xcconfig */,
+				5464C4E5691932ED4378788DA65E18A1 /* IKResults-dummy.m */,
+				3B02E9C5A2791306731C1B75D1E63E0C /* IKResults-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IKResults";
 			sourceTree = "<group>";
 		};
 		4316F7EBE2E62F4E8CC92FB55E17C2BB /* Pods-IKPermissions */ = {
@@ -87,10 +254,10 @@
 			children = (
 				1C308683409AF3A47F252BF5C373BA68 /* Pods-IKPermissions-acknowledgements.markdown */,
 				784330FA26B88FCA8ACB7A806CEBCCA1 /* Pods-IKPermissions-acknowledgements.plist */,
-				58635F7D6C0EB5BD5D2EFBADBE44843A /* Pods-IKPermissions-dummy.m */,
+				4DF43B0CAA51274D941D39FF774179EB /* Pods-IKPermissions-dummy.m */,
 				C230FE2083AB69E0A10CF763913186B0 /* Pods-IKPermissions-resources.sh */,
-				F057A3C508F56E2B791912E9D039EBC3 /* Pods-IKPermissions.debug.xcconfig */,
-				1D57BF70955A5523ECD19E89AD4BF540 /* Pods-IKPermissions.release.xcconfig */,
+				2D545898BF8F056DDAADBD6CE2744608 /* Pods-IKPermissions.debug.xcconfig */,
+				5439999D004438AC208A9B8B00968E9A /* Pods-IKPermissions.release.xcconfig */,
 			);
 			name = "Pods-IKPermissions";
 			path = "Target Support Files/Pods-IKPermissions";
@@ -99,7 +266,7 @@
 		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				6AE8D17C8D3286B0B62989C3C3F2E9AE /* Foundation.framework */,
+				5EA0CF44E0CFD39AD71CABE80DBD1E83 /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -109,25 +276,10 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				3C90B7C70A88962264A314D07B263D91 /* Pods */,
+				01E74BDABC39D8A78A3114ABE3781601 /* Pods */,
 				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
 				951CA56363D2815A11B9FBBE3CC6530C /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		8BD8E15CA8F599C84D52C899E439ABA9 /* IKResults */ = {
-			isa = PBXGroup;
-			children = (
-				01B7E6BD94D94F2680A7DA972501DB67 /* AsyncResult.h */,
-				11C16B9E790380DDFAC81AB989361528 /* AsyncResult.m */,
-				B675DA9007BCE779720AE2C4929D2BC8 /* AsyncResultGroup.h */,
-				1E9F978EFD8BE2C6CA80DD76D7FD2A6F /* AsyncResultGroup.m */,
-				E403DC8317CB7F9E32774A2899A8CF8B /* IKResultsCommon.h */,
-				9B8F9C2996A45B95927C8AE9C2B95764 /* Result.h */,
-				A146F35DB1EBD49B1FF8DBE333A8C477 /* Result.m */,
-				E452401EDE84DF5659FF24C93C039582 /* Support Files */,
-			);
-			path = IKResults;
 			sourceTree = "<group>";
 		};
 		951CA56363D2815A11B9FBBE3CC6530C /* Targets Support Files */ = {
@@ -136,6 +288,92 @@
 				4316F7EBE2E62F4E8CC92FB55E17C2BB /* Pods-IKPermissions */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		AE59D2DCCA441752EDFDFBA49B0511AC /* IKCore */ = {
+			isa = PBXGroup;
+			children = (
+				003257857BF524802E26709F0584461D /* DataStore.h */,
+				CE8FDE80E924887CAB4E552B13EB3824 /* DataStore.m */,
+				CEACF0214CFB23EE0566A3D55D8F65E8 /* Decorators.h */,
+				9F6C17FA9AE68C5FD6CA07668ACBB24F /* Defines.h */,
+				731209BC9E2EC01A80D753D25066ABE0 /* Device.h */,
+				44DEE36CC0DB8A593155DD8F58AC0383 /* Device.m */,
+				15CBB062220CE65B2BB13E1BD57D4B97 /* KCMutableDictionary.h */,
+				1D703C8950595239F17C384323DDF4A9 /* KCMutableDictionary.m */,
+				E15D58C77A7A96D883C3FFCCF1B87A2C /* MultiSort.h */,
+				6F534B9B3954D5C1760A442FA9E0D23A /* MultiSort.m */,
+				B00511C87C41ECD4A0A2F663CEBC6647 /* NSArray+All.h */,
+				54827E5BBD01E4A89D0C1AE27703A37D /* NSArray+All.m */,
+				3F53365487BDCDC7200483A6772A290E /* NSArray+Filter.h */,
+				7A265087A95E3BB797203042701F7A60 /* NSArray+Filter.m */,
+				D7BEB86D632363E1AE856465BE1D278E /* NSArray+First.h */,
+				8B1148DAE9BA2E56412EE4456A5DA67A /* NSArray+First.m */,
+				7D2B93E0C2E2611BFDB92C9925D78AD8 /* NSArray+Group.h */,
+				C48B1156CEEC6F344B225B1ACA58B048 /* NSArray+Group.m */,
+				CA81D4B1ADB47922D69E407DD5D20C3B /* NSArray+HeadTail.h */,
+				DECF258B4395EBCCFA56E637A864B30F /* NSArray+HeadTail.m */,
+				5DF3DE90D93F690C5F29D1C61BF3CB61 /* NSArray+Map.h */,
+				76ECB99DEE79A4B35D1D619DB68B3DF5 /* NSArray+Map.m */,
+				B3D7B55AA614688489CFB166C23FB447 /* NSArray+Reduce.h */,
+				BD4B6F541306E68F8FF8B8403E508125 /* NSArray+Reduce.m */,
+				DB2A3DE172EF42541289EEBE26EF921E /* NSArray+Take.h */,
+				D2BEFBB8D8E5DA3C0457E2264BCE3EFA /* NSArray+Take.m */,
+				88515BEE8697320398CFCB3608F196E8 /* NSArray+Unique.h */,
+				CC3D8DA14D20C906C5B4D33D1BDCCDA5 /* NSArray+Unique.m */,
+				94DB919296126416A859308A03F24AF3 /* NSArray+Variadic.h */,
+				FF46B2D0B4545E0BDF6C23AB9B8288EB /* NSArray+Variadic.m */,
+				0BE56B33F0213B6C16AEE1CA0DE23C84 /* NSDate+Building.h */,
+				80C524198BAD3E9E146B1B7A5D1C65D9 /* NSDate+Building.m */,
+				9CBD813B4616B02C42FE954E32FA3951 /* NSDate+Shortcuts.h */,
+				23D60A7CDA79223B39165C8B98A6A7A8 /* NSDate+Shortcuts.m */,
+				F983195F7A203A0E3FADA93C639E6229 /* NSDate+StringFormatting.h */,
+				0AA4FB9DD0630085680FC8E3E362193C /* NSDate+StringFormatting.m */,
+				7FCA3957942C1480C1E7FB2DAB33A21D /* NSDate+TimeBetween.h */,
+				1CD54F5C439EFE5F37DC7C97ACAAC0B5 /* NSDate+TimeBetween.m */,
+				41FF9C4529F00DD92BD00294D7214AE2 /* NSDictionary+Filter.h */,
+				F3F018172855DC6F7A67CB0515722C4C /* NSDictionary+Filter.m */,
+				F76FCAE6FA8747C14BE8A601801D03DB /* NSError+Init.h */,
+				E89DBC825C9405F07F47903FDC0C4F6A /* NSError+Init.m */,
+				D9F29242BDB56CB17BA8B75B4B8EE748 /* NSJSONSerialization+String.h */,
+				3B6B6D0EC17E32CDFB5BD842F7910CFA /* NSJSONSerialization+String.m */,
+				91360D6FAE38AEF8478A1A2E05009682 /* NSMutableSet+ThreadSafe.h */,
+				8A2CBBCC934390A0A6D9CAF500249915 /* NSMutableSet+ThreadSafe.m */,
+				A796EB80B860F52DC2E01BD788C641EE /* NSNumber+DurationString.h */,
+				21A7F52EA2EA2E733C95FAA0B988AC24 /* NSNumber+DurationString.m */,
+				79CD39429DB023D234AEDD7B96CBCFFE /* NSNumber+Logic.h */,
+				3A11A0DCF1F3BF02E4C549CAD3DE033A /* NSNumber+Logic.m */,
+				7ABF8B13F59E7E2981863AB3DEBD15E7 /* NSNumber+Padding.h */,
+				897E91AE3878581EB2BEFA843CBA6E1D /* NSNumber+Padding.m */,
+				BF417FA2C149BC249BFE705AE3661B28 /* NSNumber+ReadableDurations.h */,
+				BE37781F9266C03BAB095485D67E6980 /* NSNumber+ReadableDurations.m */,
+				BB9617D01F8B80F835FA6C4B146EC5D3 /* NSNumber+Times.h */,
+				BCD456AA459197C172BD4C9EF30F807A /* NSNumber+Times.m */,
+				D202979FDB372791E599EDA0A9B21BFF /* NSObject+Introspection.h */,
+				F66146AE538940B20981BBE9DF4A7E2B /* NSObject+Introspection.m */,
+				BADA57E1D1F129ED14F38AD519F0651F /* NSObject+Map.h */,
+				7AC884B279B867081F96634B7EABEDF2 /* NSObject+Map.m */,
+				6175D6CF919B6F6FAF5926441B8E4209 /* NSObject+Null.h */,
+				FA322DF1043E2F0700FD713A8E8A01D7 /* NSObject+Null.m */,
+				F065FB90D43EF4D30EC55C7C24F2CEC8 /* NSSet+Map.h */,
+				0D121FBDE9F5852B22DF7099E6F88D2D /* NSSet+Map.m */,
+				015D81BC27F2BBF6D4055277F02A4EDB /* Reachability.h */,
+				8CC776673095B555F8E0A9C6C98CC9E7 /* Reachability.m */,
+				BBA155377CFFB1BC3A265A373B923D63 /* Support Files */,
+			);
+			path = IKCore;
+			sourceTree = "<group>";
+		};
+		BBA155377CFFB1BC3A265A373B923D63 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E555E4C0558D4E2CCA5D1861A79AFA1D /* IKCore.xcconfig */,
+				4A9592259BBE6AB3BB00291E41A2DC62 /* IKCore-Private.xcconfig */,
+				5EE259A331EE215AD0621DCE99E5355F /* IKCore-dummy.m */,
+				ABDD459565C51CAA4AB79EFC5CAC3EDC /* IKCore-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IKCore";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -149,65 +387,110 @@
 		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B1176740E0214FDB2556B16DE1074175 /* libIKResults.a */,
-				B505107A73C39E7878230DA0DBCF338A /* libPods-IKPermissions.a */,
+				A8BD66B3B1061031AA4450A493ED6504 /* libIKCore.a */,
+				7C02C2A8E8EEA53570E70D4726E047F9 /* libIKResults.a */,
+				3EF7F68530F4122686517436A6F414BF /* libPods-IKPermissions.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E452401EDE84DF5659FF24C93C039582 /* Support Files */ = {
+		FC1CE99E30BF4830B244387A0F1EEE7D /* IKResults */ = {
 			isa = PBXGroup;
 			children = (
-				DF39BD7020BD41AC83A3E1B63A5F477D /* IKResults.xcconfig */,
-				7C5A80C30085667BF68ED39082EEBF03 /* IKResults-Private.xcconfig */,
-				7CB8524087D33CB322D855113EE5EEA2 /* IKResults-dummy.m */,
-				C667B3D0784CECDC446D4C4F1777B9FC /* IKResults-prefix.pch */,
+				EB07A35571AE124B5C5660A5C131DEF0 /* AsyncResult.h */,
+				782CA40B3E3225063055DA732D2B3C7A /* AsyncResult.m */,
+				1629BDBB5B4F65A6E660035A1A0BD425 /* AsyncResultGroup.h */,
+				6B6ABA5A6C6FC50E959C389A790A070F /* AsyncResultGroup.m */,
+				71FCD88F9CBB5B1644C6CF7C2CBDD5FA /* IKResultsCommon.h */,
+				88DA364D71DCFB2C0708B0BCFCAF6921 /* Result.h */,
+				51B1AF11B3CE11A78274A6F61BB04DD3 /* Result.m */,
+				20FA887A6E4EA4E8A30AC1D0D65C55EB /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/IKResults";
+			path = IKResults;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		8AA65BAAF4F572FB2FF3AF3A6B1799F4 /* Headers */ = {
+		3A7E0190FE08C59AB209D0B840BF3798 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA3B9CBCE9DE65D1003B0067190C5F2E /* AsyncResult.h in Headers */,
-				D9E2455E3626B74E89EFF0FBC556D1DB /* AsyncResultGroup.h in Headers */,
-				4BA32A43CB627374034EEDCBA055B3DD /* IKResultsCommon.h in Headers */,
-				4D958E6FDBEFDC83F8153F4759A7F9A7 /* Result.h in Headers */,
+				EFCBA2B075883CA0BC6A8933B48F081C /* DataStore.h in Headers */,
+				974AB6BA4CC67E7011DA554EFB2B3EB0 /* Decorators.h in Headers */,
+				BA6C1966AD433F8224591B748EFEB65B /* Defines.h in Headers */,
+				8E79EC58F72A32783F42CDCB552D22A8 /* Device.h in Headers */,
+				BCA2E6319514A8B94C719B344F055097 /* KCMutableDictionary.h in Headers */,
+				51BEC84D28E323EF45067C8495A212E2 /* MultiSort.h in Headers */,
+				50BD183A44F8D77891412C23972F9E33 /* NSArray+All.h in Headers */,
+				F91FF27DC456A7AAD773ED290F636DBA /* NSArray+Filter.h in Headers */,
+				D2E3A845CF89BD560B9D712C865B6B26 /* NSArray+First.h in Headers */,
+				4F06D15F7684F76B031DB1203DB05E8B /* NSArray+Group.h in Headers */,
+				4D3044FB50C3002D339CA5E7BF29D8A4 /* NSArray+HeadTail.h in Headers */,
+				416C7C5ACCD1A5F4E78F5CC2483144F8 /* NSArray+Map.h in Headers */,
+				50EF34F5450E0DFF539E0A860623FD43 /* NSArray+Reduce.h in Headers */,
+				FAD67CBFA948BAC0519FE6CB7636E91A /* NSArray+Take.h in Headers */,
+				72C8D3F66BD93A76895555D704FC13C0 /* NSArray+Unique.h in Headers */,
+				A468327E137535B9D6C55F4552F7C386 /* NSArray+Variadic.h in Headers */,
+				3669D0524A03C1499FAA5F1A640959A5 /* NSDate+Building.h in Headers */,
+				BB5F2FCF09AEF49FA1CF4C22C5CA7550 /* NSDate+Shortcuts.h in Headers */,
+				039E973E7EDB13C0C085F331B0A9B5E7 /* NSDate+StringFormatting.h in Headers */,
+				1C361B810DE6EE2A3C2A62F3926CB6CB /* NSDate+TimeBetween.h in Headers */,
+				59DD1D5A63D8C26546BFC7075D871540 /* NSDictionary+Filter.h in Headers */,
+				4B938272CDF47CFD3E2462342372D744 /* NSError+Init.h in Headers */,
+				50AD7ED7BAF0C6479625ABC742B4968D /* NSJSONSerialization+String.h in Headers */,
+				C12A7379BC2209E1556BF1F33F0E5553 /* NSMutableSet+ThreadSafe.h in Headers */,
+				709A17D1FE9630E77B071E51988297D0 /* NSNumber+DurationString.h in Headers */,
+				B652294DD9AF357DAE0303E2504D92D0 /* NSNumber+Logic.h in Headers */,
+				A296F32666EA9DE7042B717D584B6D4D /* NSNumber+Padding.h in Headers */,
+				919736840DCC397D2410C636379DC7EE /* NSNumber+ReadableDurations.h in Headers */,
+				2C214DC9A9F9E838A848766086CF0349 /* NSNumber+Times.h in Headers */,
+				DD2A215F6649B347C9F3A67FCA4AEE13 /* NSObject+Introspection.h in Headers */,
+				4975AF8573D68EC495D22CFFC2EF2E19 /* NSObject+Map.h in Headers */,
+				E4672E355954D0930A6C73CAE794BF91 /* NSObject+Null.h in Headers */,
+				DA1A1D1F2FD67648C95C21C48EC50C60 /* NSSet+Map.h in Headers */,
+				BEB08BE40887D020547EDFE546A2D9E5 /* Reachability.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA690661D4398985F89FBB6CF88209EA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7840672746F0C432C7B43A6A1CE355BA /* AsyncResult.h in Headers */,
+				D7AE0F6F3DA86DB8057AD8D381F61280 /* AsyncResultGroup.h in Headers */,
+				846B0EE8A7FFCE634EF4E84829CF0259 /* IKResultsCommon.h in Headers */,
+				72D8C77DCEDA7C2448244D41D44A23E0 /* Result.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		447AE4FD78D1FB4E6F1707181F03C7CF /* Pods-IKPermissions */ = {
+		5F6FAB687F6FC2AF82A0FAF3CA3C08C3 /* IKCore */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 843256356D7BD2FC2FDAB17204391B63 /* Build configuration list for PBXNativeTarget "Pods-IKPermissions" */;
+			buildConfigurationList = E90B03BE8B2B56A38227C7105ABF5957 /* Build configuration list for PBXNativeTarget "IKCore" */;
 			buildPhases = (
-				04FB55C3CCF5EB30D706575BC5F07928 /* Sources */,
-				9815ADD7EAF65AB81EA5A1FFF2CE1D4D /* Frameworks */,
+				833297986FD999650F8B7EA44D6B0B6B /* Sources */,
+				B24638EBB00638EF3C1419BEAB562AF3 /* Frameworks */,
+				3A7E0190FE08C59AB209D0B840BF3798 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				134A47896138873BFE546B6DF0F5CE83 /* PBXTargetDependency */,
 			);
-			name = "Pods-IKPermissions";
-			productName = "Pods-IKPermissions";
-			productReference = B505107A73C39E7878230DA0DBCF338A /* libPods-IKPermissions.a */;
+			name = IKCore;
+			productName = IKCore;
+			productReference = A8BD66B3B1061031AA4450A493ED6504 /* libIKCore.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		61E74D48B24AED043959DD79853DE16C /* IKResults */ = {
+		B34115B7FD0311114FBF55D439F6C97C /* IKResults */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5C5E6567254F107D311E0F042AE1A16A /* Build configuration list for PBXNativeTarget "IKResults" */;
+			buildConfigurationList = B18F70DAA69CD172643D6A8FC3484684 /* Build configuration list for PBXNativeTarget "IKResults" */;
 			buildPhases = (
-				C96A6259F829A82C05954A780C60A49A /* Sources */,
-				1D00119F5D949021ECD26BC4DE6E04AA /* Frameworks */,
-				8AA65BAAF4F572FB2FF3AF3A6B1799F4 /* Headers */,
+				A851EA9CFD72FA287A1E3931682C4658 /* Sources */,
+				1E7F736E9944CE1C566AD799FA23370D /* Frameworks */,
+				FA690661D4398985F89FBB6CF88209EA /* Headers */,
 			);
 			buildRules = (
 			);
@@ -215,7 +498,25 @@
 			);
 			name = IKResults;
 			productName = IKResults;
-			productReference = B1176740E0214FDB2556B16DE1074175 /* libIKResults.a */;
+			productReference = 7C02C2A8E8EEA53570E70D4726E047F9 /* libIKResults.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E28CAD0533F040E4225ECCEC7C4462D6 /* Pods-IKPermissions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3986520DBC6675255638519D841A413 /* Build configuration list for PBXNativeTarget "Pods-IKPermissions" */;
+			buildPhases = (
+				EDE1EF684611B8D5A3BE5D0B7D58DECE /* Sources */,
+				F3D2E86EAB139A84F6EFC25412B43C7B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D890F0AFAA3F208F9D3CAE994500C6C0 /* PBXTargetDependency */,
+				7436B52640CAF176F1DFF736C0E3C90A /* PBXTargetDependency */,
+			);
+			name = "Pods-IKPermissions";
+			productName = "Pods-IKPermissions";
+			productReference = 3EF7F68530F4122686517436A6F414BF /* libPods-IKPermissions.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -239,40 +540,87 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				61E74D48B24AED043959DD79853DE16C /* IKResults */,
-				447AE4FD78D1FB4E6F1707181F03C7CF /* Pods-IKPermissions */,
+				5F6FAB687F6FC2AF82A0FAF3CA3C08C3 /* IKCore */,
+				B34115B7FD0311114FBF55D439F6C97C /* IKResults */,
+				E28CAD0533F040E4225ECCEC7C4462D6 /* Pods-IKPermissions */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		04FB55C3CCF5EB30D706575BC5F07928 /* Sources */ = {
+		833297986FD999650F8B7EA44D6B0B6B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D17FF35BE4EF2559109347738F86B96 /* Pods-IKPermissions-dummy.m in Sources */,
+				0BC6A98CC298449A03484DCA32ADD47B /* DataStore.m in Sources */,
+				CF5E7B604B8C518DEBA5A86B3A08CD73 /* Device.m in Sources */,
+				D33084391839687E0C481E5FF7C5750C /* IKCore-dummy.m in Sources */,
+				02688DC23630CECC3D3F36262F078169 /* KCMutableDictionary.m in Sources */,
+				CFA6672387895C95E81284BBD937073F /* MultiSort.m in Sources */,
+				7DAF017CF7C8CDBAFA6764CD65B0CD79 /* NSArray+All.m in Sources */,
+				E459A0EA917E946B95350CCA50757F99 /* NSArray+Filter.m in Sources */,
+				1EE604D2B2D11B3C8B0F724E5768B2E4 /* NSArray+First.m in Sources */,
+				BECA9523BC181AF8BEF8ADC1E50FAA77 /* NSArray+Group.m in Sources */,
+				619D6CDD84456A6395B2326A7C8BFA75 /* NSArray+HeadTail.m in Sources */,
+				9C9695C8E9CEA81787207F6873E2B39C /* NSArray+Map.m in Sources */,
+				DA5D6EA98D0EF2DFB96D6429274B5FDB /* NSArray+Reduce.m in Sources */,
+				390868443749FE2E3C7ADB3D504C5DD9 /* NSArray+Take.m in Sources */,
+				7FA55516E33ED3F7E7BE61B64E100B20 /* NSArray+Unique.m in Sources */,
+				23241D88E596C0EF24457464CA593ACD /* NSArray+Variadic.m in Sources */,
+				11ED141E96436E598CA3964ED2C73492 /* NSDate+Building.m in Sources */,
+				D18B6102D87133DEFA43D9836882CD90 /* NSDate+Shortcuts.m in Sources */,
+				63E258BEF51DDE8466387F758B35AE8F /* NSDate+StringFormatting.m in Sources */,
+				D60F86F3EB5AE83F318A3557EA4E6EE7 /* NSDate+TimeBetween.m in Sources */,
+				39710DDE7BFC01EF64455C6EA20651E5 /* NSDictionary+Filter.m in Sources */,
+				F2F53E4ACD7564B1A61EF6DA34E68326 /* NSError+Init.m in Sources */,
+				BCF05C9E45973648E73E9686932F6AAF /* NSJSONSerialization+String.m in Sources */,
+				C255B5963E2505167B78E11979FE3DB4 /* NSMutableSet+ThreadSafe.m in Sources */,
+				82FD5D6FF9098795FBFCB3C89ED64687 /* NSNumber+DurationString.m in Sources */,
+				7C0DBF32357889C17E71B8904183B8CB /* NSNumber+Logic.m in Sources */,
+				3FF44BC3D951C28E6BEFF840176B5C09 /* NSNumber+Padding.m in Sources */,
+				C5997747B45300191AE5787797DE1E7B /* NSNumber+ReadableDurations.m in Sources */,
+				0877658424690464CF636E1D14A21964 /* NSNumber+Times.m in Sources */,
+				87CBD35BC4C0F7C0FBB8344D2B0893DB /* NSObject+Introspection.m in Sources */,
+				CF4BEE3D6AE8B1777B77AAFDD128F958 /* NSObject+Map.m in Sources */,
+				34A87EA5DA0EB53D8B589E1F67FA0DB9 /* NSObject+Null.m in Sources */,
+				E52B84904F2668872E60B3C3DEBCEFAC /* NSSet+Map.m in Sources */,
+				3C9DF308B00B8F30FCC8DCF931B0D925 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C96A6259F829A82C05954A780C60A49A /* Sources */ = {
+		A851EA9CFD72FA287A1E3931682C4658 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B58E80B009E5E8BCAA21B9552AA8D044 /* AsyncResult.m in Sources */,
-				511CD0C3A65C19F7F1693D72CFCBFC7A /* AsyncResultGroup.m in Sources */,
-				9178AD32FD6DE9FB5CD40503B6B00F95 /* IKResults-dummy.m in Sources */,
-				77C90BA88EE5203F2CC65FC6FA4498A0 /* Result.m in Sources */,
+				A5818F961AD5F51BB8E75C22C109E02F /* AsyncResult.m in Sources */,
+				4021624BC7FA3803E0358BE72C6C42FB /* AsyncResultGroup.m in Sources */,
+				903F4410614C1F1CB33870CA19A6F88E /* IKResults-dummy.m in Sources */,
+				96B5369732B7BCB26E60C5FEBC64EAA0 /* Result.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDE1EF684611B8D5A3BE5D0B7D58DECE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				475CD726D90FAE0AFBE666368B4DAE44 /* Pods-IKPermissions-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		134A47896138873BFE546B6DF0F5CE83 /* PBXTargetDependency */ = {
+		7436B52640CAF176F1DFF736C0E3C90A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = IKResults;
-			target = 61E74D48B24AED043959DD79853DE16C /* IKResults */;
-			targetProxy = A6E701EAB952B7ED64095DC6FE97C26F /* PBXContainerItemProxy */;
+			target = B34115B7FD0311114FBF55D439F6C97C /* IKResults */;
+			targetProxy = A761AB15BE7F2EB0BE6CAC6C6FE0F356 /* PBXContainerItemProxy */;
+		};
+		D890F0AFAA3F208F9D3CAE994500C6C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IKCore;
+			target = 5F6FAB687F6FC2AF82A0FAF3CA3C08C3 /* IKCore */;
+			targetProxy = 8B270F464F75284BF2B86680AAB2774B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -311,41 +659,9 @@
 			};
 			name = Release;
 		};
-		38342ECCDB9BEBA4DADBB9D9FF6123B3 /* Release */ = {
+		180D64764C6B6D8A3B24954414FA753A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D57BF70955A5523ECD19E89AD4BF540 /* Pods-IKPermissions.release.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		6CE3D6AF815E32BA580DB9305A6E8CC2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F057A3C508F56E2B791912E9D039EBC3 /* Pods-IKPermissions.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		92E3E2F80C95C09344043993F71CC0E7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C5A80C30085667BF68ED39082EEBF03 /* IKResults-Private.xcconfig */;
+			baseConfigurationReference = 6B48F2FDECDCA50D47B3E67745838D01 /* IKResults-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/IKResults/IKResults-prefix.pch";
@@ -358,6 +674,70 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
+		};
+		1DBE36E95897AA088944D42FCFE1F5F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A9592259BBE6AB3BB00291E41A2DC62 /* IKCore-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/IKCore/IKCore-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		33368D04D42DBD749AD5D43D7261B380 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A9592259BBE6AB3BB00291E41A2DC62 /* IKCore-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/IKCore/IKCore-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		635013F3D57FAF869D7E164621437B34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5439999D004438AC208A9B8B00968E9A /* Pods-IKPermissions.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B1557655E0C5F3A210249106C0DF71E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D545898BF8F056DDAADBD6CE2744608 /* Pods-IKPermissions.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
 		};
 		B37F0F91F85060E28F1DAAB522DC7EC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -398,9 +778,9 @@
 			};
 			name = Debug;
 		};
-		FB19D6ADBFBFAE89159F03767324FC10 /* Debug */ = {
+		D1EA93849BC595ED4F9659DA3FAD3A21 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C5A80C30085667BF68ED39082EEBF03 /* IKResults-Private.xcconfig */;
+			baseConfigurationReference = 6B48F2FDECDCA50D47B3E67745838D01 /* IKResults-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/IKResults/IKResults-prefix.pch";
@@ -426,20 +806,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5C5E6567254F107D311E0F042AE1A16A /* Build configuration list for PBXNativeTarget "IKResults" */ = {
+		B18F70DAA69CD172643D6A8FC3484684 /* Build configuration list for PBXNativeTarget "IKResults" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FB19D6ADBFBFAE89159F03767324FC10 /* Debug */,
-				92E3E2F80C95C09344043993F71CC0E7 /* Release */,
+				D1EA93849BC595ED4F9659DA3FAD3A21 /* Debug */,
+				180D64764C6B6D8A3B24954414FA753A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		843256356D7BD2FC2FDAB17204391B63 /* Build configuration list for PBXNativeTarget "Pods-IKPermissions" */ = {
+		E90B03BE8B2B56A38227C7105ABF5957 /* Build configuration list for PBXNativeTarget "IKCore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6CE3D6AF815E32BA580DB9305A6E8CC2 /* Debug */,
-				38342ECCDB9BEBA4DADBB9D9FF6123B3 /* Release */,
+				33368D04D42DBD749AD5D43D7261B380 /* Debug */,
+				1DBE36E95897AA088944D42FCFE1F5F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3986520DBC6675255638519D841A413 /* Build configuration list for PBXNativeTarget "Pods-IKPermissions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1557655E0C5F3A210249106C0DF71E1 /* Debug */,
+				635013F3D57FAF869D7E164621437B34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
