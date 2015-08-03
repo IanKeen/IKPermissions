@@ -1,0 +1,10 @@
+PODS:
+  - IKResults (1.1)
+
+DEPENDENCIES:
+  - IKResults (~> 1.0)
+
+SPEC CHECKSUMS:
+  IKResults: 6aee22a99d79f01f42f00b28e89889deef80d18f
+
+COCOAPODS: 0.38.2
